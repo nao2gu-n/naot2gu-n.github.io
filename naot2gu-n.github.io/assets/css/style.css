@@ -1,0 +1,209 @@
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f7f6;
+    color: #333;
+}
+
+header {
+    
+    color: #fff;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+    padding: 3rem 0;
+}
+
+header nav a {
+    color: #fff;
+    margin: 0 1.5rem;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease-in-out;
+}
+
+header nav a:hover {
+    color: #ffdd57;
+}
+
+/* Section Styles */
+section {
+    padding: 4rem 0;
+}
+
+section.bg-light {
+    background: #f8f9fa;
+}
+
+h2 {
+    margin-bottom: 2rem;
+    color: #007bff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+/* Card Styles */
+.card {
+    border: none;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: #fff;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+
+.card-title {
+    font-size: 1.5rem; 
+    font-weight: 700; 
+    color: #333; 
+    text-align: center; 
+    margin-bottom: 1rem;
+    text-transform: uppercase; 
+    letter-spacing: 1.5px; 
+}
+
+.card-title i {
+    margin-right: 0.5rem; 
+    color: #007bff; 
+    font-size: 1.25rem; 
+}
+.card:hover .card-title {
+    color: #007bff; 
+    text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+.card ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.card ul li:nth-child(odd) {
+    background-color: #f9f9f9; /* 薄いグレー */
+}
+
+.card ul li:nth-child(even) {
+    background-color: #ffffff; /* 白 */
+}
+
+.card ul li {
+    padding: 0.5rem; 
+    border-radius: 4px; 
+    margin-bottom: 0.2rem; 
+}
+
+.card ul li i {
+    margin-right: 0.5rem;
+    color: #007bff;
+}
+
+/* Footer */
+footer {
+    background: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-top: 3rem;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Button Styles */
+button {
+    background: #007bff;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+.table {
+    margin-top: 1rem;
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fefefe;
+}
+
+/* Header Row */
+.table thead tr {
+    background-color: #2a9d8f; /* アクセントとしてエメラルドグリーン */
+    color: #fff;
+    font-size: 1rem;
+    text-align: left;
+}
+
+/* Body Rows */
+.table tbody tr:nth-child(odd) {
+    background-color: #f0fdfa; /* 薄いエメラルドグリーン */
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: #f9f9f9; /* 薄いグレー */
+}
+
+/* Row Hover Effect */
+.table tbody tr:hover {
+    background-color: #ffddc1; /* ホバー時に柔らかいオレンジ */
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Table Cell Styling */
+.table th, .table td {
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid #dee2e6; /* Separator between rows */
+}
+
+/* First Column Emphasis */
+.table tbody td:first-child {
+    font-weight: bold;
+    color: #264653; /* ダークブルー */
+}
+
+/* Rounded Corners */
+.table thead th:first-child {
+    border-top-left-radius: 8px;
+}
+
+.table thead th:last-child {
+    border-top-right-radius: 8px;
+}
+
+.table tbody tr:last-child td:first-child {
+    border-bottom-left-radius: 8px;
+}
+
+.table tbody tr:last-child td:last-child {
+    border-bottom-right-radius: 8px;
+}
